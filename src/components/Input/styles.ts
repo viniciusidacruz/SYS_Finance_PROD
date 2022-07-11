@@ -43,6 +43,10 @@ export const ContentPassword = styled.div`
   cursor: pointer;
 `;
 
-export const ShowIcon = styled(BsEyeFill)``;
+export const ShowIcon = styled(BsEyeFill)`
+  color: ${({ theme }) => theme.COLORS.GRAY.MAIN};
+`;
 
-export const HideIcon = styled(BsEyeSlashFill)``;
+export const HideIcon = styled(BsEyeSlashFill)`
+  color: ${({ theme }) => theme.COLORS.GRAY.MAIN};
+`;
