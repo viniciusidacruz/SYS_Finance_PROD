@@ -4,6 +4,9 @@ import type { NextPage } from "next";
 
 import useDarkMode from "hooks/useDarkMode";
 
+import { MethodSignIn } from "layouts/MethodSignIn";
+import { FormSignIn } from "components/Forms/SignIn";
+
 const Home: NextPage = () => {
   const { handleChangeMode } = useDarkMode();
 
@@ -14,7 +17,9 @@ const Home: NextPage = () => {
       </Head>
 
       <main>
-        <button onClick={() => handleChangeMode()}>Change theme</button>
+        <MethodSignIn>
+          <FormSignIn />
+        </MethodSignIn>
       </main>
     </Fragment>
   );
