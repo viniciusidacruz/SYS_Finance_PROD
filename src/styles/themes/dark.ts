@@ -10,6 +10,8 @@ const DARK = {
       DARK: "#012611",
       LIGHT: "#038C4C",
     },
+
+    WHITE: "#FFFFFF",
   },
   FONTS: {
     SIZES: {

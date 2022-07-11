@@ -13,6 +13,8 @@ declare module "styled-components" {
         DARK: string;
         LIGHT: string;
       };
+
+      WHITE: string;
     };
     FONTS: {
       SIZES: {
