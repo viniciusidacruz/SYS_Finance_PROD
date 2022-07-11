@@ -1,8 +1,7 @@
-import useDarkMode from "hooks/useDarkMode";
 import { ReactNode } from "react";
 import { ThemeProvider } from "styled-components";
 
-import LIGHT from "styles/themes/light";
+import useDarkMode from "hooks/useDarkMode";
 
 interface ContentProps {
   children: ReactNode;

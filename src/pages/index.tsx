@@ -1,6 +1,7 @@
 import { Fragment } from "react";
 import Head from "next/head";
 import type { NextPage } from "next";
+
 import useDarkMode from "hooks/useDarkMode";
 
 const Home: NextPage = () => {
