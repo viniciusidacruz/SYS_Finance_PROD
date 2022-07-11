@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { Input } from "components/Input";
 
 import * as S from "./styles";
+import { Button } from "components/Button";
 
 export function FormSignIn() {
   const [showPassword, setShowPassword] = useState(false);
@@ -16,6 +17,7 @@ export function FormSignIn() {
       <Input
         name="email"
         type="email"
+        autoComplete="off"
         iconType={<S.Email />}
         placeholder="Digite o seu email"
       />
@@ -24,6 +26,7 @@ export function FormSignIn() {
         isPassword
         minLength={6}
         maxLength={30}
+        autoComplete="off"
         iconType={<S.Password />}
         showPassword={showPassword}
         placeholder="Digite a sua senha"
@@ -33,7 +36,8 @@ export function FormSignIn() {
 
       <S.FooterForm>
         <span>Esqueceu a senha?</span>
-        <button>Entrar</button>
+
+        <Button title="Entrar" variant="contained" />
       </S.FooterForm>
     </S.Form>
   );

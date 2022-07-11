@@ -19,6 +19,18 @@ export const FooterForm = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  & > span {
+    cursor: pointer;
+
+    &:hover {
+      filter: brightness(0.8);
+    }
+  }
+
+  button {
+    width: 50%;
+  }
 `;
 
 export const Email = styled(MdEmail)``;
